@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name h4{
+    padding-left: 25px;
+}
+.main{
+    height: 650px;
+    width: 600px;
+    border: 2px solid red;
+    background-color: rgb(62, 61, 61);
+    overflow: hidden;
+}
+.enmy{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    /* padding-left: 30px; */
+}
+.bot{
+    width: 20px;
+    height: 15px;
+    background-color: brown;
+    border-radius: 50%;
+
+}
+.char{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.hero{
+    width: 20px;
+    height: 25px;
+    background-color: aqua;
+    position: absolute;
+    top: 150px;
+}
+.bullet{
+    height: 15px;
+    width: 10px;
+    background-color: blue;
+    position: absolute;
+    top: 150px;
+    /* animation: fire 1500ms ; */
+}
+.animate{
+    animation: fire 1000ms;
+}
+@keyframes fire {
+    from{
+        top:150px;
+    }
+    to{
+        top:-500px;
+    }
+    
+}
